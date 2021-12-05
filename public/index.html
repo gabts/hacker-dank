@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackerDank</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HackerDank</h1>
+      <button id="export">Export</button>
+    </header>
+    <main>
+      <ul id="categories"></ul>
+      <ul id="tasks"></ul>
+      <form>
+        <h2 id="task-title">Task Name</h2>
+        <p id="task-description">Task description</p>
+        <textarea id="code-editor"></textarea>
+        <div class="row">
+          <button id="code-reset">Reset</button>
+          <button id="code-submit">Submit</button>
+        </div>
+      </form>
+      <ul id="results"></ul>
+    </main>
+    <script src="bundle.js"></script>
+  </body>
+</html>

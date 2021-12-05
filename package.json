@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "bundle": "node scripts/bundle",
+    "dev": "node scripts/serve"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.2",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2"
+  }
+}
