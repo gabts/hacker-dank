@@ -19,8 +19,6 @@ export function exportAnswers() {
     }
   }
 
-  console.log(content);
-
   const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
 
   const file = document.createElement("a");
