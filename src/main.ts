@@ -14,12 +14,13 @@ const state = {
 const elements = {
   categories: document.getElementById("categories")!,
   codeEditor: document.getElementById("code-editor") as HTMLInputElement,
+  exportAnswers: document.getElementById("export")!,
   reset: document.getElementById("code-reset")!,
+  results: document.getElementById("results")!,
   submit: document.getElementById("code-submit")!,
   taskDescription: document.getElementById("task-description")!,
   taskTitle: document.getElementById("task-title")!,
   tasks: document.getElementById("tasks")!,
-  exportAnswers: document.getElementById("export")!,
 };
 
 function storeCodeEditorValue() {
@@ -36,6 +37,7 @@ function onSelectTask() {
   elements.codeEditor.value =
     localStorage.getItem(getTaskId(state.category, state.task)) ||
     task.initialCode;
+  elements.results.innerHTML = "";
 }
 
 onSelectTask();
