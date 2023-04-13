@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "bundle": "node scripts/bundle",
-    "dev": "node scripts/serve"
+    "build": "esbuild src/main.ts --bundle --minify --outfile=public/bundle.js",
+    "dev": "esbuild src/main.ts --bundle --outfile=public/bundle.js --watch --servedir=public"
   },
   "devDependencies": {
-    "esbuild": "^0.14.2",
+    "esbuild": "^0.17.16",
     "prettier": "^2.5.1",
     "typescript": "^4.5.2"
   }

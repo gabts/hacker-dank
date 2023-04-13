@@ -3,6 +3,9 @@ import { exec } from "./exec";
 import { exportAnswers } from "./export-answers";
 import { getTaskId } from "./utils";
 
+// live reload https://esbuild.github.io/api/#live-reload
+new EventSource("/esbuild").addEventListener("change", () => location.reload());
+
 const state = {
   category: categories[0],
   task: categories[0].tasks[0],
